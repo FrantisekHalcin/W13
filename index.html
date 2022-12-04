@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoznam filmov</title>
+
+<style>
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: aliceblue;
+    }
+
+
+    #formular {
+        padding: 50px 0px;
+        margin: auto;
+        margin-top: 100px;
+        
+        border-radius: 15px;
+        width: 400px;
+        background-image: linear-gradient(to bottom, rgb(26, 15, 75), rgb(5, 127, 171));
+    }
+
+    input, label {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    label {
+        padding-top: 11px;
+        padding-bottom: 5px;
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    button {
+        margin: 7px;
+    }
+
+
+   
+</style>
+
+</head>
+<body>
+    
+    <div id="formular">
+    <form>
+
+        <label for="film">Zadaj názov filmu:</label>
+        <input type="text" id="film">
+        <label for="rok">Zadaj rok vzniku filmu:</label>
+        <input type="text" id="rok">
+        <label for="herec">Zadaj meno herca filmu:</label>
+        <input type="text" id="herec">
+<div id="buttons">
+        <button type="button" onclick="pridajUdaj(event)">Vložiť</button>
+        <button type="button" onclick="vymazPosledny()">Odstrániť posledný</button>
+        <button type="button" onclick="vymazVsetko()">Vymazať celý zoznam</button>
+</div>
+
+
+    </form>
+    </div>
+<script src="./zoznam.js"></script>
+</body>
+</html>
